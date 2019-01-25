@@ -1,5 +1,7 @@
 package edu.gatech.oad.antlab.person;
 
+import java.util.*;
+
 /**
  *  A simple class for person 2
  *  returns their name and a
@@ -10,6 +12,11 @@ package edu.gatech.oad.antlab.person;
  */
 public class Person2 {
     /** Holds the persons real name */
+
+    public static void main(String[] args) {
+        System.out.println(calc("Aidan"));
+    }
+
     private String name;
 	 	/**
 	 * The constructor, takes in the persons
@@ -29,9 +36,11 @@ public class Person2 {
 	 * @param input the string to be modified
 	 * @return the modified string
 	 */
-	private String calc(String input) {
-	  //Person 2 put your implementation here
-	  return null;
+	private static String calc(String input) {
+	  //Person 2 put your implementation here;
+	  List<String> a = Arrays.asList(input.split(""));
+	  Collections.shuffle(a);
+	  return a.toString().replaceAll("[\\[\\]]", "").replaceAll(",", "").replaceAll(" ", "");
 	}
 	/**
 	 * Return a string rep of this object
