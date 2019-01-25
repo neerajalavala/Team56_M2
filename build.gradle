@@ -1,0 +1,11 @@
+apply plugin: 'java'
+
+defaultTasks 'jar'
+
+jar {
+	manifest {
+		attributes "Implementation-Title": 'Milestone 2 Build',
+					"Implementation-Version": '1.0',
+					"Main-Class": 'x'
+			 }
+	}
