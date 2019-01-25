@@ -38,7 +38,7 @@ public class Person4 {
             int ascii = (int) character;
 
             ascii++;
-            output += ((char)ascii).toString();
+            output += ((char)ascii);
 
         }
 
