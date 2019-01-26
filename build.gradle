@@ -8,8 +8,9 @@ dependencies {
 
 jar {
 	manifest {
-		attributes "Implementation-Title": 'Milestone2',
+		attributes "Implementation-Title": 'Milestone 2',
 					"Implementation-Version": '1.0',
-					"Main-Class": 'edu.gatech.oad.antlab.pkg1.AntLabMain'
+					"Main-Class": 'edu.gatech.oad.antlab.pkg1.AntLabMain',
+                    'Class-Path': '../../lib/resources.jar'
 			 }
 	}
